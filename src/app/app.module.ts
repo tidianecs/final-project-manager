@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './layouts/auth/login/login.component';
 import { RegisterComponent } from './layouts/auth/register/register.component';
 import { ProjectDashboardComponent } from './layouts/project-dashboard/project-dashboard.component';
+import { TaskDashboardComponent } from './layouts/task-dashboard/task-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ProjectDashboardComponent
+    ProjectDashboardComponent,
+    TaskDashboardComponent
   ],
   imports: [
     BrowserModule,
