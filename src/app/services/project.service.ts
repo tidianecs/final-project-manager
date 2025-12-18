@@ -25,7 +25,8 @@ export class ProjectService {
     const {data, error} = await this.supabaseService.getClient()
         .from('projects')
         .insert([project])
-        .select();
+        .select()
+        .single();
     /*if(error){
         alert("Insertion Error: " + error.message)
     }else{
@@ -57,3 +58,4 @@ export class ProjectService {
     return data as Project
   }*/
 }
+
