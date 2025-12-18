@@ -3,14 +3,11 @@
     <h1 class="text-3xl font-bold text-gray-800">
       Mes Taches
     </h1>
-    <button routerLink="/project-dashboard" class="text-sm text-blue-600 hover:underline">
-      ← Retour aux projets
-    </button>
   </div>
 
-  <div class="bg-white p-4 rounded-xl shadow mb-8 flex gap-3">
+  <div class="bg-white p-4 rounded-xl shadow mb-8 flex flex-col sm:flex-row gap-3">
     <input [(ngModel)]="newTaskTitle" type="text" placeholder="Nouvelle tâche..." class="flex-1 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-    <button (click)="addTask()" [disabled]="loading" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition">
+    <button (click)="addTask()" [disabled]="loading" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition w-full sm:w-auto">
       + Ajouter
     </button>
   </div>

@@ -20,7 +20,7 @@ export class SupabaseService {
     return this.supabase.auth.signInWithPassword({email, password});
   }
 
-  async signOut(email: string, password: string){
+  async signOut(){
     return this.supabase.auth.signOut();
   }
 

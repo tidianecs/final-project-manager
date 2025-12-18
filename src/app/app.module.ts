@@ -8,6 +8,8 @@ import { LoginComponent } from './layouts/auth/login/login.component';
 import { RegisterComponent } from './layouts/auth/register/register.component';
 import { ProjectDashboardComponent } from './layouts/project-dashboard/project-dashboard.component';
 import { TaskDashboardComponent } from './layouts/task-dashboard/task-dashboard.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TaskDashboardComponent } from './layouts/task-dashboard/task-dashboard.
     LoginComponent,
     RegisterComponent,
     ProjectDashboardComponent,
-    TaskDashboardComponent
+    TaskDashboardComponent,
+    NavbarComponent,
+    AppLayoutComponent
   ],
   imports: [
     BrowserModule,
